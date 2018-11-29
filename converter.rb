@@ -23,8 +23,6 @@ def convert(changeColor)
 				.gsub("fff", "000")
 				.gsub("FFFFFF", "000000")
 				.gsub("FFF", "000")
-
-			puts changeColor
 		end
 
 		firstIndex = newContent.index("android:viewportWidth=")
