@@ -15,6 +15,12 @@ def convert(changeColor)
 			.gsub("group", "g")
 			.gsub("android:fillType", "fill-rule")
 			.gsub("android:name", "id")
+
+		if newContent.include? "android:strokeWidth"
+   			newContent = newContent
+   				.gsub("android:strokeWidth", "stroke-width")
+   				.gsub("android:strokeColor", "fill=\"none\"\nstroke")
+		end
 		
 		if 	changeColor == "true"
 
